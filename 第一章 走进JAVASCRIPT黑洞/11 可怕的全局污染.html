@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11 可怕的全局污染</title>
+</head>
+<body>
+  <script>
+    //web 未被定义，这样就 全局都能访问，污染了全局
+    /*
+      所有一定要声明变量，不过有的程序员会忘记 怎么办？
+      那我们 就用 严格模式
+
+    */
+    //严格模式
+    "use strict"
+    function show(){
+      web = "houdunren.com";
+      console.log(web)
+    }
+    show();
+    console.log(web)
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 一元运算符的前置与后置操作</title>
+</head>
+
+<body>
+  <script>
+
+    
+    let n = 1;
+    let f = 2;
+    let d = f + n++  //这个 是先算大表达式的，然后在 n++
+    console.log(d);
+    console.log(n);
+
+    /*
+    ++n
+    其实 就是 n = n+1;
+    */
+
+    let n = 1;
+    let f = 2;
+    let d = f + ++n //这个是 先n++,然后 在算大表达式
+    console.log(d);
+    console.log(n);
+
+  </script>
+</body>
+
+</html>
