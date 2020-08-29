@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 var-let-const的共同点</title>
+</head>
+<body>
+  <script>
+    // var web = "houdunren";
+    // function show(){
+    //   console.log(web,"var");
+    // }
+    // show();
+    // console.log(web,"var")
+
+    // let web = "houdunren";
+    // function show(){
+    //   console.log(web,"let");
+    // }
+    // show();
+    // console.log(web,"let")
+
+    // const web = "houdunren";
+    // function show(){
+    //   const web = "后盾人";
+    //   console.log(web,"const");
+    // }
+    // show();
+    // console.log(web,"const")
+
+
+    // 同级作用于里面不能被重复命名
+    // let web = "houdunren";
+    // let web = "后盾人";
+    // console.log(web);
+
+    // let web = "houdunren";
+    // web = "后盾人";
+    // console.log(web);
+
+    // const web = "houdunren";
+    // web = "后盾人";
+    // console.log(web);
+
+    /*
+    const定义常量与使用let 定义的变量相似：
+    1、二者都是块级作用域
+    2、都不能和它所在作用域内的其他变量或函数拥有相同的名称
+    
+    两者还有以下两点区别：
+    1、const声明的常量必须初始化，而let声明的变量不用
+    2、const 定义常量的值不能通过再赋值修改，也不能再次声明。而 let 定义的变量值可以修改。
+    */
+
+  </script>
+</body>
+</html>

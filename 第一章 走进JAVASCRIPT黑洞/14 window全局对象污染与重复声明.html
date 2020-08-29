@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14 window全局对象污染与重复声明</title>
+</head>
+<body>
+  <script>
+    /*
+    如果我们用 var 来定义变量
+    那么 这个变量名 就会挂载在 window对象上面，
+    但是 let 和 const 就不会，
+    window对象的属性，就会被 我们用var 声明的变量 更改了值
+    window 对象的属性
+    */
+    // var screenLeft = 99;
+    // var one = window.screenLeft
+    // console.log(one)
+  </script>
+</body>
+</html>
