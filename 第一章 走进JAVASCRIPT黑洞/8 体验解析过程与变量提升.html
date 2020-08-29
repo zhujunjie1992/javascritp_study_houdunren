@@ -9,9 +9,30 @@
 
 <body>
   <script>
-    let web = 'houdunren.com';
-    console.log(web);
-    var one = 'hdcms';
+    // let web = 'houdunren.com';
+    // console.log(web);
+    // var one = 'hdcms';
+
+    /*
+    代码是从上到下执行的，但是解析器会先把代码全部解析一遍
+    */
+    // console.log(web);
+    // var web = 'hdr';
+
+    function hd(){
+      if(false){
+        var web = 'houdunren';
+      }
+      //遍历提升
+      console.log(web)
+    }
+
+    hd();
+  </script>
+
+  <script src="js/test.js"></script>
+  <script>
+    console.log(abc)
   </script>
 </body>
 
