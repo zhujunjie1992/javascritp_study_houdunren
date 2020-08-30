@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9 电话号码模糊处理</title>
+</head>
+<body>
+  <script>
+    //电话号码 模糊处理
+    let tel = 15951206837;
+    function phone(mobile,len=3){
+      return String(mobile).slice(0,len*-1)+"*".repeat(len)
+    }
+    
+    console.log(phone(tel,4))
+
+    /*
+    知识点  JavaScript String repeat() 方法
+    复制字符串 "Runoob" 两次:
+    var str = "Runoob";
+    str.repeat(2);
+    */
+
+
+    let str = "13515015421";
+    
+    console.log(str.slice(3,-1))
+  </script>
+</body>
+</html>

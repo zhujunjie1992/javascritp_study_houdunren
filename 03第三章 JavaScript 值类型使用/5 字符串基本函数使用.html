@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 字符串基本函数使用</title>
+</head>
+
+<body>
+
+  <input type="text" name="password" />
+  <script>
+    let name = "ZhuJunJie";
+    console.log(name.length);
+    console.log(name.toUpperCase());//转化成大写
+    console.log(name.toLowerCase());//转化成小写
+
+    let str = "   xiao zhu  ";
+    console.log(str.length);//字符串的长度，
+    console.log(str.trim());//去除字符串里面的空格
+
+    let ps = document.querySelector("[name='password']");
+    ps.addEventListener("keyup", function () {
+      console.log(this.value.trim().length);
+    })
+  </script>
+</body>
+
+</html>
