@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14 window全局对象污染与重复声明</title>
+</head>
+<body>
+  <script>
+
+    
+    // var web = "zhujunjie.com";
+    // console.log(window);
+    // console.log(window.web);
+
+    // let web02 = "xiaozhu.com111";
+    // console.log(window);
+    // console.log(window.web02);
+
+    /*
+    我们自己声明的变量 ，影响 window， 这显然是不合理的
+
+    这个var 一开始 最初 就有这样的问题
+    */
+
+    //var screenLeft = 99;
+    //console.log(window.screenLeft);
+
+
+    /*
+    重复声明的问题
+    */
+
+    /*
+    var 在同一个作用域重复声明 是不会报错提示的
+
+    但是 let const 是会报错的
+    */
+    // var web = "xiaozhu";
+    // var web = "zhujunjie";
+
+
+    // let web = "xiaozhu";
+    // let web = "zhujunjie";
+
+    //const web = "xiaozhu";
+    //const web = "zhujunjie";
+
+
+  </script>
+</body>
+</html>

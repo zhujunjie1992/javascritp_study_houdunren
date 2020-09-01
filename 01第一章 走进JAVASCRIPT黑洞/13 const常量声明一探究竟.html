@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13 const常量声明一探究竟</title>
+</head>
+<body>
+  <script>
+    /*
+    定义一些固定的常量，不能改变的 一般是用大写的，好区分
+    */
+
+    //在同一个作用域中是 不能改的
+    // const URL = "www.baidu.com";
+    // URL = '111'
+
+    // const URL = "www.baidu.com";
+    // function show(){
+    //   const URL = "111";
+    //   console.log(URL)
+    // }
+    // show();
+    // console.log(URL)
+
+
+    //引用类型是 可以改变的------基本量是不能改的，就是我们说的标量是不能改的
+    // const CONFIG = {}
+    // CONFIG.name = "zhujunjie";
+    // console.log(CONFIG);
+    // CONFIG.name = "xiaozhu";
+    // console.log(CONFIG)
+    //引用类型 对象啊，数组啊都是可以改的 
+    
+
+    //这样是不会报错的，在同一个作用域是不能改的，但是 在不同的作用域 是可以改的
+    // const IMG = "1111";
+    // {
+    //   const IMG = "2222";
+    // }
+    
+
+  </script>
+</body>
+</html>

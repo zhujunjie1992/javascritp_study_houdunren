@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15 Object.freeze冻结变量</title>
+</head>
+
+<body>
+  <script>
+    "use strict"
+    //使用严格模式
+    console.log(111);
+    const CONFIG = {
+      url : 'www.baidu.com',
+      port :3000
+    }
+    
+    //冻结变量
+    Object.freeze(CONFIG)
+    //这样就会 有报错提示
+    CONFIG.port = 8080
+
+    console.log(CONFIG);
+  </script>
+</body>
+
+</html>

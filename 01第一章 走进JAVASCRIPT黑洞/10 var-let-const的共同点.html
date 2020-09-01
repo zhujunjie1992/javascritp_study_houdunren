@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 var-let-const的共同点</title>
+</head>
+
+<body>
+  <script>
+    // var web = "zhujunjie.com";
+    // console.log(web, 1111);
+
+    // function show() {
+    //   console.log(web, 2222)
+    // }
+    // show();
+    // console.log(web, 3333);
+
+
+    // let web = "zhujunjie.com";
+    // console.log(web, 1111);
+
+    // function show() {
+    //   console.log(web, 2222)
+    // }
+    // show();
+    // console.log(web, 3333);
+
+    // const web = "zhujunjie.com";
+    // console.log(web, 1111);
+
+    // function show() {
+    //   console.log(web, 2222)
+    // }
+    // show();
+    // console.log(web, 3333);
+
+    /*
+    相同点
+    函数当中是能够访问到外部全局的变量的
+    */
+
+    var web = "xiaozhu";
+    function show(){
+      var web = "tianpeng";
+      console.log(web)
+    }
+    show();
+
+    
+  </script>
+</body>
+
+</html>

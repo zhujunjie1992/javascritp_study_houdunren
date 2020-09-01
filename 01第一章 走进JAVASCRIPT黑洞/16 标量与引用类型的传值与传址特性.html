@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>16 标量与引用类型的传值与传址特性</title>
+</head>
+
+<body>
+  <script>
+    //传值 传址
+    // var a = 1;
+    // var b = a;
+    // console.log(b,"b");
+    // a = 2;
+    // console.log(a,"a")
+
+
+    let e = {}
+    let f = e;
+
+    /*
+    JS 深拷贝和浅拷贝概念，以及实现深拷贝的三种方式
+    一、理解堆栈，基本数据类型与引用数据类型
+    1、堆栈
+　　　　栈（stack）：系统自动分配的内存空间，内存会由系统自动释放，用来存放函数的参数值，局部变量的值等，特点是先进后出。
+　　　　堆（heap）：系统动态分配的内存，内存大小不一，内存不会自动释放。一般由程序员分配释放，主要负责像Obejct这种变量类型的存储。
+    
+    2、基本数据类型
+　　　　概念：存放在栈内存中的简单数据段，数据大小确定，内存空间大小确定。
+　　　　6种基本数据类型：Undefined、Null、Boolean、Number、String、Symbol
+    
+    3、引用数据类型
+　　　　概念：存放在堆内存中的数据，如对象、数组、函数等。名存在栈内存，值存在堆内存，栈内存会提供一个引用的地址指向堆内存中的值
+
+
+    二、深拷贝与浅拷贝
+
+    1、封装深拷贝函数
+    2、借用JSON对象的 parse 和 stringify
+    
+    function deepClone(obj) {
+      let newObj = JSON.stringify(obj);
+      let objClone = JSON.parse(newObj);
+      return objClone;
+    }
+
+    let a = [0, 1, [2, 3], 4],
+      b = deepClone(a);
+    a[0] = 1;
+    a[2][0] = 1;
+    console.log(a, b);
+
+    3、借用 JQ 的 extend 方法实现深拷贝。
+    */
+    
+  </script>
+</body>
+
+</html>

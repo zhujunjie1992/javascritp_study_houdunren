@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11 可怕的全局污染</title>
+</head>
+
+<body>
+  <script>
+    // web = "zhujunjie.com";
+    // console.log(web);
+
+    // function show() {
+    //   web = "xiaozhu.com"
+    // }
+    // show();
+    /*
+    这时候 全局就能访问到 这个web，
+    如果这个函数 是外面的，那么 就会收到影响
+    */
+    //console.log(web);
+  </script>
+</body>
+
+</html>

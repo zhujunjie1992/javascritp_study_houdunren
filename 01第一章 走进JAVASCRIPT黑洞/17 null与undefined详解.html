@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17 null与undefined详解</title>
+</head>
+
+<body>
+  <script>
+    /*
+    null undefined
+    */
+    //一个变量声明的时候，不确定值的时候 
+
+    let config = null; //表示引用类型
+    let web = undefined; //表示基本类型
+
+    console.log(null == undefined);
+
+    //函数没有定义返回值，那么它返回的是 undefined
+    function show(name) {
+      console.log(name)
+    }
+    console.log(show());
+
+
+    function xingxing(num = 5){
+      for(let i = 0;i<num;i++){
+        document.write("*")
+      }
+    }
+    //xingxing()
+    //xingxing(20)
+  </script>
+</body>
+
+</html>

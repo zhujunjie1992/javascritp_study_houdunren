@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8 体验解析过程与变量提升</title>
+</head>
+<body>
+  <script>
+    /*
+    在js中 有些 名称是不能作为变量名的
+    */
+
+    // var web = "www.baidu.com" ;
+    // console.log(web);
+    // var class = "hdc";
+
+    /*
+    在代码执行之前，浏览器会对代码进行解析
+    下面的 web会进行变量提升
+    */
+    // console.log(web)
+    // var web ;
+
+
+    //还是会有变量提升
+    // function test(){
+    //   if(false){
+    //     var username = "zhujunjie";
+    //   }
+    //   console.log(username);
+    // }
+    // test();
+
+    //变量提升是不好的，后面出现了 let const 替换了 var
+
+    /*
+    原理 只有var 的时候
+    主张 先声明 后使用
+    js成长之后 
+    */
+
+
+  </script>
+</body>
+</html>
