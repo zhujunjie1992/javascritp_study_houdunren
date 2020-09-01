@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 比较运算符注意事项</title>
+</head>
+
+<body>
+
+  <input type="text" name="age" />
+  <small id="test"></small>
+  <script>
+    // let a = 1;
+    // let b = 2;
+    // console.log(a < b);
+    // console.log(a > b);
+    // console.log(a == b);
+
+
+    //== 是强制类型转换 === 类型不会转换
+
+    // let a = 1;
+    // let b = "1";
+    // console.log(a == b)
+
+    // console.log(a === b);
+    // console.log(a >= b);
+    // console.log(b <= a);
+
+
+    document.querySelector('[name=age]').addEventListener("keyup", function () {
+      var msg = "";
+      if (this.value > 90) {
+        msg = "年龄不能大于90岁"
+      }
+      test.innerHTML = this.value >= 90 ? "年龄不能大于90" : ""
+    })
+  </script>
+</body>
+
+</html>
