@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 使用闭包获取区间商品</title>
+</head>
+
+<body>
+  <script>
+    // let arr = [1, 22, 4, 5, 6, 7, 8, 921, 21]
+
+    // let hd = arr.filter((v)=>{
+    //   return v>10 && v<100
+    // })
+    // console.log(hd)
+
+    // function between(a, b) {
+    //   return function (v) {
+    //     return v >= a && v <= b
+    //   }
+    // }
+    // console.log(arr.filter(between(3, 9)));
+
+
+    // function between(a, b) {
+    //   return function (v) {
+    //     return v >= a && v <= b;
+    //   }
+    // }
+    // console.log(arr.filter(between(5,9)))
+
+    let shop = [{
+        name: "苹果",
+        price: 5.3
+      },
+      {
+        name: "栗子",
+        price: 8.9
+      },
+      {
+        name: "香蕉",
+        price: 5.9
+      },
+      {
+        name: "葡萄",
+        price: 7.9
+      }, {
+        name: "柚子",
+        price: 9.9
+      }
+    ]
+
+    function between(a, b) {
+      return function (v) {
+        return v.price >= a && v.price <= b
+      }
+    }
+
+    let shoplist = shop.filter(between(7, 8));
+    console.log(shoplist)
+  </script>
+</body>
+
+</html>

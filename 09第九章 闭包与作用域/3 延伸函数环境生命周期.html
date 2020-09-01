@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 延伸函数环境生命周期</title>
+</head>
+
+<body>
+  <script>
+    // function hd() {
+    //   let n = 1;
+
+    //   function sum() {
+    //     let title = "朱俊杰";
+    //     console.log(++n)
+    //   }
+    //   sum();
+    // }
+    // hd();
+    // hd();
+
+    // function hd(){
+    //   let n = 1;
+    //   return function sum(){
+    //     console.log(++n);
+    //   }
+    // }
+    // // hd();
+    // let a = hd();
+    // a()
+    // a()
+    // let b = hd();
+    // b();
+    // b();
+    // let c = hd();
+    // c();
+
+    function hd() {
+      let n = 1;
+      return function sum() {
+        let m = 1;
+        return function show() {
+          console.log(++m, "---m")
+          console.log(++n, "---n");
+        }
+      }
+    }
+    let a = hd()();
+    a();
+    a();
+    a();
+  </script>
+</body>
+
+</html>

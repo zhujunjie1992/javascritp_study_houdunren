@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 使用展开语法完成参数合并</title>
+</head>
+
+<body>
+  <script>
+    // let user = {
+    //   name:'xiaozhu',
+    //   age:20
+    // }
+    // let hd = {...user,lang:'zh'}
+    // console.log(hd)
+
+    function upload(params) {
+      let config = {
+        type: "*.jpeg,*.png",
+        size: 1000
+      }
+      config = {
+        ...config,
+        ...params
+      }
+      console.log(config)
+    }
+
+    upload({
+      size: 90
+    })
+    upload({
+      type: "*.png"
+    })
+  </script>
+</body>
+
+</html>
