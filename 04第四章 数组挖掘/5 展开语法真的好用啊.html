@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 展开语法真的好用啊</title>
+</head>
+<body>
+  <script>
+    let arr =['zhujunjie','xiaozhu'];
+    let test = ['js','css'];
+    
+    // arr.push(test);
+    // console.log(arr)
+  
+
+    arr.push(...test);
+    console.log(arr)
+
+    /*
+      ...语法
+      就是展开语法
+    */
+
+    function show(...arr){
+      console.log(arr);
+    }
+
+    show(11,2,3,4,5);
+  </script>
+</body>
+</html>

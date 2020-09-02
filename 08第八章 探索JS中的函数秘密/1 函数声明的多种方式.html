@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 函数声明的多种方式</title>
+</head>
+
+<body>
+  <script>
+    /*
+      函数存在的价值
+      把重复的功能封装起来
+    */
+
+    // let cms = function(title){
+    //   console.log(title);
+    // };
+    // cms("houdunren");
+
+    let user = {
+      name: null,
+
+      //把这个匿名函数 赋值给对象的属性
+      setUsername: function (name) {
+        this.name = name
+      },
+      getUsername: function () {
+        return this.name
+      }
+    }
+
+    user.setUsername("朱俊杰");
+    console.log(user.getUsername()), 111;
+  </script>
+</body>
+
+</html>

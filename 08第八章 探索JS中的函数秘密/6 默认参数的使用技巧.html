@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 默认参数的使用技巧</title>
+</head>
+
+<body>
+  <script>
+    // function avg(total, year = 1) {
+    //   return Math.round(total / year);
+    // }
+    // console.log(avg(2000))
+
+
+    function sortArray(array, type = "asc") {
+      return array.sort((a, b) => {
+        return type == "asc" ? a - b : b - a;
+      })
+    }
+    console.log(sortArray([11, 22, 44, 22, 1123, 343, 3434, 123, 123], 'desc'))
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15 函数与方法中this的不同</title>
+</head>
+
+<body>
+  <script>
+    //对象当中的函数，我们一般叫它 为方法
+    // let obj = {
+    //   name:'zhujunjie',
+    //   show:function(){
+
+    //     /*
+    //       this 当前对象的引用
+    //     */
+    //     return this.name;
+    //   }
+    // }
+
+
+    // console.log(window);
+
+
+    let obj = {
+      name: 'zhujunjie',
+      show: function () {
+
+        //如果只是普通的函数，那么this就是全都对象
+        function render() {
+          console.log(this);
+        }
+        //如果这个函数 是这样类方法或者对象属性，那么这个this就是当前的对象
+
+        console.log(this);
+        return this.name
+      }
+    }
+  </script>
+</body>
+
+</html>

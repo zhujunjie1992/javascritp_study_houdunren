@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 匿名函数与函数提升</title>
+</head>
+
+<body>
+  <script>
+    //匿名函数-函数表达式
+    //这种写法 不会提升
+    let hd = function () {
+      console.log()
+    }
+
+    //这样的写法 会出现函数提升
+    show();
+
+    function show() {
+      console.log(111);
+    }
+
+    //匿名函数 使用的频率 是非常高的
+    let sum = function (...arr) {
+      return arr.reduce((s, j) => {
+        return s + j
+      })
+    }
+    console.log(sum(1, 2))
+
+    
+  </script>
+</body>
+
+</html>
