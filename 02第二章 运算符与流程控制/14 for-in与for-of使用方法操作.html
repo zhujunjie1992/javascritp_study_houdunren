@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14 for-in与for-of使用方法操作</title>
+</head>
+<body>
+  <script>
+    let students=[
+      {
+        name:'xiaozhu',
+        age:29,
+      },{
+        name:'tianhou',
+        age:30
+      },{
+        name:'zhujunjie',
+        age:45
+      }
+    ]
+
+    for(i in students){
+      console.log(students[i]);
+    }
+    console.log('-----------------------')
+    for(item of students){
+      console.log(item);
+    }
+  </script>
+</body>
+</html>

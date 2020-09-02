@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 使用ifelse判断密码强度</title>
+</head>
+<body>
+
+  <input type="password" name="psaaword" placeholder="请输入密码"/>
+  <span id="msg"></span>
+  <script>
+    // if(true){
+    //   console.log('zhujunjie');
+    // }
+
+
+    // let state = false;
+    // if(state){
+    //   console.log('zhujunjie');
+    // }else{
+    //   console.log('tianpeng')
+    // }
+
+    function query(el){
+      return document.querySelector(el)
+    }
+    query("[name='psaaword']").addEventListener('keyup',function(){
+      let length = this.value.length;
+      console.log(this.value)
+      console.log(length);
+      let msg;
+      if(length>10){
+        msg = "密码很强"
+      }else if(length>6){
+        msg = "中级"
+      }else{
+        msg = "密码很弱"
+      }
+      query('#msg').innerHTML = msg
+    })
+
+
+  </script>
+</body>
+</html>
