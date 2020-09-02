@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>18 日期时间戳的使用与计算脚本执行时间</title>
+</head>
+
+<body>
+  <script>
+    const date = new Date();
+    console.log(date);
+
+    const start = Date.now();
+    for(let i = 0;i<10000000;i++){
+
+    }
+    const end = Date.now();
+    console.log((end -start)/1000+"秒")
+  </script>
+</body>
+
+</html>

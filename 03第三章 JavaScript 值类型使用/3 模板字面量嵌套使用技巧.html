@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 模板字面量嵌套使用技巧</title>
+</head>
+
+<body>
+  <script>
+    // function show(){
+    //   return "zhujunjie.com"
+    // }
+    // let web = `www.${show()}`;
+    // console.log(web)
+
+    let students = [{
+        name: 'zhujunjie'
+      },
+      {
+        name: 'xiaozhu'
+      },
+      {
+        name: 'tianpeng'
+      },
+      {
+        name: 'xiaoming'
+      }
+    ]
+
+    function template() {
+      // return `
+      //   <ul>
+      //     ${students.map(item=>{
+      //       return "<li>" +item.name+"</li>"
+      //     }).join("")}
+      //   </ul>
+      // `
+
+      return `
+        <ul>
+          ${students.map(item=>{
+            return `<li>${item.name}</li>`
+          }).join("")}
+        </ul>
+      `
+    }
+    document.body.innerHTML = template();
+  </script>
+</body>
+
+</html>

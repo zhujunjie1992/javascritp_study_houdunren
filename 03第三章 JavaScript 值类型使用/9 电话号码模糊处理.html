@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9 电话号码模糊处理</title>
+</head>
+
+<body>
+  <script>
+    // let tel = 15951206837;
+
+    // function newphone(mobile, len = 4) {
+    //   return
+    // }
+
+    // function fn(option) {
+    //   // 判断传入的手机号码位数，不符合则返回提示
+    //   if (String(option.mobile).length > 11) {
+    //     return "手机号码格式错误"
+    //   } else {
+    //     let newmobile = String(option.mobile).slice(0, option.start) + "*".repeat(option.num) + String(option.mobile)
+    //       .slice(option.start + option.num, String(option.mobile).length)
+    //     // 如果新的手机号位数过长，则返回固定11位手机号
+    //     return newmobile.slice(0, 11)
+    //   }
+    // }
+
+    // console.log(fn({
+    //   mobile: 13012345678,
+    //   start: 3,
+    //   num: 4
+    // }))
+
+
+    /*
+      练习
+    */
+    let config = {
+      tel:15951206837,
+      start:3,
+      len:4
+    }
+
+    function phone(option){
+      let newsmobile = String(option.tel).slice(0,option.start)+"*".repeat(option.len)+String(option.tel).slice(option.start+option.len,String(option.tel).length)
+      return newsmobile;
+    }
+
+    console.log(phone(config))
+
+
+  </script>
+</body>
+
+</html>
