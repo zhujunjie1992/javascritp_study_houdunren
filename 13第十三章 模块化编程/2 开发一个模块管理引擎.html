@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 开发一个模块管理引擎</title>
+</head>
+
+<body>
+  <script type="module">
+    //模块发展的历史
+    //AMD require
+
+    // import {name} from './01.js'
+    // console.log(name)
+
+    import * as one from './01.js';
+    console.log(one.default.name)
+  </script>
+</body>
+
+</html>

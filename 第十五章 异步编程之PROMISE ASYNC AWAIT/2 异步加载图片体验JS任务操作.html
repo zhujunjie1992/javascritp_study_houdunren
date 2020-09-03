@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 异步加载图片体验JS任务操作</title>
+</head>
+
+<body>
+  <script>
+    function loadImage(src, resolve, reject) {
+      let image = new Image();
+      image.src = src;
+      image.onload = resolve;
+      image.onerror = reject;
+    }
+    loadImage(
+      'https://iph.href.lu/400x300?text=%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87',
+      () => {
+        console.log("图片加载完成")
+      },
+      () => {
+        console.log("图片加载失败")
+      });
+    console.log('zhujunjie');
+  </script>
+</body>
+
+</html>

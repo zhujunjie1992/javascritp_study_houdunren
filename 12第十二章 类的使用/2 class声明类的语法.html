@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 class声明类的语法</title>
+</head>
+
+<body>
+  <script>
+    /*
+      类的语法
+    */
+
+    class User {
+
+      //其实constructor始终指向创建当前对象实例的（构造）函数
+      constructor(name){
+        this.name = name;
+        console.log("constructor-----------");
+      }
+      //类里面的方法 就不需要逗号隔开了，
+      show() {
+
+      }
+      get() {
+        console.log("get111");
+      }
+    }
+    // let Hd = User;
+    // console.log(typeof Hd);
+    let hd = new User('测试！！！');
+    console.log(hd.name)
+    console.log(hd)
+    hd.get();
+
+    let test = new User();
+
+
+    
+
+  </script>
+</body>
+
+</html>

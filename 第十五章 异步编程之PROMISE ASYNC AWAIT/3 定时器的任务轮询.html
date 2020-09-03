@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 定时器的任务轮询</title>
+</head>
+<body>
+  <script>
+    function interval(callback,delay){
+      let id = setInterval(() => {
+        callback(id)
+      }, delay);
+    }
+
+    interval(function(id){
+      console.log(id)
+    },1000)
+  </script>
+</body>
+</html>
